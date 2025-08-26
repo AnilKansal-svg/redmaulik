@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Only proceed if screen width is less than 1024px
+    if (window.innerWidth >= 1024) return; // Exit if screen is 1024px or wider
+    
     // Add loaded class to body
     document.body.classList.add('menu-loading');
     
